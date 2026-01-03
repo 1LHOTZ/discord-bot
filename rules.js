@@ -72,7 +72,6 @@ Once you’ve read through everything, click the button below to finish verifica
 
   // ✉️ 5. Send, then pin the message
   const sent = await channel.send({ embeds: [embed], components: [row] });
-
   await sent.pin().catch(() => console.warn("⚠️ Couldn't pin rules message (check permissions)."));
 
   // 🗂 6. Mark as posted
